@@ -69,19 +69,17 @@ header {
 }
 
 .product-row {
-    display: flex;
-    gap: 16px; /* Добавлен отступ между карточками */
-    overflow-x: auto; /* Добавлено для горизонтальной прокрутки */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Используем авто-заполнение и минимальную ширину */
+    gap: 16px; /* Отступ между карточками */
+    overflow-x: auto; /* Горизонтальная прокрутка */
 }
 
 .product {
-    width: 155px;
-    height: 253px;
-    background-color: #eee; /* Временная заглушка */
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: #f0f0f0; /* Пример фона для карточек */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center; /* Центрируем текст внутри карточки */
 }
 
 .product-image {
