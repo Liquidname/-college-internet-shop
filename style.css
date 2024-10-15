@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    height: 65px;
+    background-color: #fb3640;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрируем контент в header */
+}
+
+.logo {
+    width: 156px;
+    height: 25px;
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    flex-grow: 1; /* Заставляем строку поиска растягиваться */
+    height: 29px;
+    background-color: #fff;
+    margin: 0 18px; /* Отступы от логотипа и кнопок */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 16px;
+}
+
+.content {
+    margin: 18px auto;
+    max-width: 912px;
+    padding: 0 101px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем контент в content */
+}
+
+.content-image {
+    width: 100%;
+    height: 227px;
+    border-radius: 30px;
+    background-color: #ddd; /* Временная заглушка */
+    margin-bottom: 21px;
+}
+
+.product-row {
+    display: flex;
+    gap: 16px; /* Добавлен отступ между карточками */
+    overflow-x: auto; /* Добавлено для горизонтальной прокрутки */
+}
+
+.product {
+    width: 155px;
+    height: 253px;
+    background-color: #eee; /* Временная заглушка */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    width: 155px;
+    height: 190px;
+    background-color: #ccc; /* Временная заглушка */
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px; /* Добавлен отступ между изображением и названием */
+}
+
+.product-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 12px;
+    color: #888;
+}
